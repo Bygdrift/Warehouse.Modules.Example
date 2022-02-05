@@ -8,20 +8,9 @@ Install the [Warehouse environment](https://github.com/Bygdrift/Warehouse/tree/m
 
 ## Videos
 
-How to setup the Example module (in Danish):
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=itwd2XdHIkM">
-         <img src="https://img.youtube.com/vi/itwd2XdHIkM/0.jpg">
-      </a>
-</div>
+2022-01-28: [Setup the Example module](https://www.youtube.com/watch?v=itwd2XdHIkM) (in Danish):
 
-
-How to update an already installed module, once a new update has been pushed to GitHub (in Danish):
-<div align="left">
-      <a href="https://www.youtube.com/watch?v=XywfV_n-320">
-         <img src="https://img.youtube.com/vi/XywfV_n-320/0.jpg">
-      </a>
-</div>
+2022-01-28: [Update an already installed module, once a new update has been pushed to GitHub](https://www.youtube.com/watch?v=XywfV_n-320) (in Danish):
 
 ## Setup the Warehouse environment with the portal:
 

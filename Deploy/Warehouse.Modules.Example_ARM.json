@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.4.1124.51302",
-      "templateHash": "8348929510939756128"
+      "templateHash": "17018072371050971028"
     }
   },
   "parameters": {
@@ -95,7 +95,7 @@
               "value": "[parameters('moduleName')]"
             },
             {
-              "name": "Setting--DataFromSetting",
+              "name": "DataFromSetting",
               "value": "[parameters('dataFromSetting')]"
             },
             {

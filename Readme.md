@@ -15,3 +15,9 @@ All modules can be installed and facilitated with ARM templates (Azure Resource 
 ## License
 
 [MIT License](https://github.com/Bygdrift/Warehouse.Modules.Example/blob/master/License.md)
+
+# Updates
+
+## 0.3.3
+
+In 0.3.2, all user settings should have a prefix of 'Setting--'. That has been removed, so when upgrading from 0.3.2, then go this module's Configuration and find `Setting--DataFromSetting` and change it to `DataFromSetting`.

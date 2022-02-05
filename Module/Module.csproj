@@ -3,13 +3,13 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<AzureFunctionsVersion>v4</AzureFunctionsVersion>
 		<OutputType>Library</OutputType>
-		<Version>0.3.2</Version>
+		<Version>0.3.3</Version>
 		<PackageId>Bygdrift.Warehouse.Modules.Example</PackageId>
 		<Authors>Kenboc</Authors>
 		<Company>Bygdrift</Company>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Bygdrift.Warehouse" Version="0.6.1" />
+		<PackageReference Include="Bygdrift.Warehouse" Version="0.6.2" />
 		<PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.0.1" />
 
 		<!--For the developer of bygdrift Warehosue when testing-->
