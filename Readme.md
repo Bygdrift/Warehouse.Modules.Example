@@ -12,12 +12,44 @@ By saving data to a MS SQL database, it is:
 
 All modules can be installed and facilitated with ARM templates (Azure Resource Management): [Use ARM templates to setup and maintain this module](https://github.com/Bygdrift/Warehouse.Modules.Example/blob/master/Deploy).
 
-## License
+## Database content
 
-[MIT License](https://github.com/Bygdrift/Warehouse.Modules.Example/blob/master/License.md)
+| TABLE_NAME      | COLUMN_NAME     | DATA_TYPE |
+| :-------------- | :-------------- | :-------- |
+| Data            | Id              | int       |
+| Data            | Text            | varchar   |
+| Data            | Date            | datetime  |
+| Data            | DataFromSetting | varchar   |
+| Data            | DataFromSecret  | varchar   |
+| DataAccumulated | Id              | int       |
+| DataAccumulated | Text            | varchar   |
+| DataAccumulated | Date            | datetime  |
+| DataAccumulated | DataFromSetting | varchar   |
+| DataAccumulated | DataFromSecret  | varchar   |
+
+## Data lake content
+
+In the data lake container with this modules name, there are three main folders `Drawings`, `Raw` and `Refined`.
+
+ The folder structure:
+
++ Raw
+    - {yyyy the year}
+        - {MM the month}
+            - {dd the month}
+                - Data.txt
++ Refined
+    - {yyyy the year}
+        - {MM the month}
+            - {dd the month}
+                - Data.csv
 
 # Updates
 
 ## 0.3.3
 
 In 0.3.2, all user settings should have a prefix of 'Setting--'. That has been removed, so when upgrading from 0.3.2, then go this module's Configuration and find `Setting--DataFromSetting` and change it to `DataFromSetting`.
+
+# License
+
+[MIT License](https://github.com/Bygdrift/Warehouse.Modules.Example/blob/master/License.md)
