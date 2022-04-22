@@ -39,13 +39,13 @@ namespace ModuleTests.Refines
             var errors = function.App.Log.GetErrorsAndCriticals().ToList();
             Assert.AreEqual(0, errors.Count);
 
-            //There should come  a warning that 'Settings:DataNoteSet' is not set
+            //There should come  a warning that 'DataNoteSet' is not set
             var warnings = function.App.Log.GetLogs(LogType.Warning).ToList();
             Assert.AreEqual(1, warnings.Count);
 
-            //There should come  an information 'Modulename' is not set and the generic "Example" will be used instead
+            //There should come  2 informations, that th module is started and that it is refining data
             var infos = function.App.Log.GetLogs(LogType.Information).ToList();
-            Assert.AreEqual(1, infos.Count);
+            Assert.AreEqual(2, infos.Count);
 
             //Is data uploaded to datalake?:
             Assert.IsTrue(function.App.DataLake.FileExist("Raw", "Data.txt", FolderStructure.DatePath));

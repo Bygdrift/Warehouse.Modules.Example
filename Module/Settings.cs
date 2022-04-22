@@ -12,8 +12,8 @@ namespace Module
         /// If no success, it returns the default value '5'.
         /// 'NotSet.ShowLogError' gives an error in the log. If it was 'NotSet.ThrowError', the module would have stopped the excecution.
         /// </summary>
-        //[ConfigSetting(Default = "This is a default text because appSettings for 'Setting--DataNotSet' wasn't set", NotSet = NotSet.ShowLogWarning, ErrorMessage = "It is not necesary to set this setting. This warning is just an example")]
-        //public string DataNotSet { get; set; }
+        [ConfigSetting(Default = "This is a default text because appSettings for 'Setting--DataNotSet' wasn't set", NotSet = NotSet.ShowLogWarning, ErrorMessage = "It is not necesary to set this setting. This warning is just an example")]
+        public string DataNotSet { get; set; }
 
         [ConfigSetting]
         public string DataFromSetting { get; set; }
