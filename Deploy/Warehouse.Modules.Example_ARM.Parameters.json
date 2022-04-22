@@ -11,6 +11,9 @@
         "ModuleName": {
             "value": "Example"
         },
+        "ScheduleExpression": {
+            "value": "0 0 1 * * *"
+        },
         "TimeZoneId": {
             "value": "Romance Standard Time"
         }

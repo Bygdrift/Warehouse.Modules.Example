@@ -6,7 +6,8 @@
     "ModuleName": "Example",
     "Secret--Example--DataFromSecret": "A secret specific for the module",
     "DataFromSetting": "Some text from appsettings.Development.json",
-    "TimeZoneId": "Romance Standard Time", //Get timeZoneId from here: https://raw.githubusercontent.com/Bygdrift/Warehouse/master/Docs/TimeZoneIds.csv
+    "ScheduleExpression": "0 0 1 * * *", //When to call TimerTrigger. Right now each night at 1 AM UTC. Read more here: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=csharp#ncrontab-expressions
+    "TimeZoneId": "Romance Standard Time" //Get timeZoneId from here: https://raw.githubusercontent.com/Bygdrift/Warehouse/master/Docs/TimeZoneIds.csv
     //"VaultUri": "https://<keyvault>.vault.azure.net/" //If VaultUri is set, the secrets will be fetched from the vault instead of using secrets from appsettings.json or apsettings.development.json. It is an easy way of wookring in a team, without concerns of sharing secrets in appSettings
   }
 }

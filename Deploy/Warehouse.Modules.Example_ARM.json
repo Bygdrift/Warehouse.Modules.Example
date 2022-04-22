@@ -4,8 +4,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.4.1124.51302",
-      "templateHash": "17018072371050971028"
+      "version": "0.5.6.12127",
+      "templateHash": "8726656675922984611"
     }
   },
   "parameters": {
@@ -25,6 +25,13 @@
       },
       "maxLength": 24,
       "minLength": 3
+    },
+    "scheduleExpression": {
+      "type": "string",
+      "defaultValue": "0 0 1 * * *",
+      "metadata": {
+        "description": "How often this module should run. This example runs each night at 1AM UTC. Read more here: https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer?tabs=csharp#ncrontab-expressions"
+      }
     },
     "timeZoneId": {
       "type": "string",
@@ -97,6 +104,10 @@
             {
               "name": "DataFromSetting",
               "value": "[parameters('dataFromSetting')]"
+            },
+            {
+              "name": "ScheduleExpression",
+              "value": "[parameters('scheduleExpression')]"
             },
             {
               "name": "TimeZoneId",
